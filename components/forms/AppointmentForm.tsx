@@ -120,8 +120,8 @@ const AppointmentForm = ({ type, userId, patientId }: AppointmentFormProps) => {
               control={form.control}
               fieldType={FormFieldType.SELECT}
               name="primaryPhysician"
-              label="Doctor"
-              placeholder="Select a doctor"
+              label="Primary Physician"
+              placeholder="Select a physician"
             >
               {Doctors.map((doctor) => (
                 <SelectItem key={doctor.name} value={doctor.name}>

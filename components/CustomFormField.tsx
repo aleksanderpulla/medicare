@@ -49,6 +49,8 @@ const RenderField = ({ field, props }: { field: any; props: CustomProps }) => {
     renderSkeleton,
   } = props;
 
+  console.log("Event: ", field);
+
   switch (fieldType) {
     case FormFieldType.INPUT:
       return (
