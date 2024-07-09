@@ -12,9 +12,9 @@ import { getAppointmentSchema } from "@/lib/validation";
 import { useRouter } from "next/navigation";
 import { FormFieldType } from "./PatientForm";
 import { Doctors } from "@/constants";
-import { SelectItem } from "@radix-ui/react-select";
 import Image from "next/image";
 import { createAppointment } from "@/lib/actions/appointment.actions";
+import { SelectItem } from "../ui/select";
 
 interface AppointmentFormProps {
   type: "create" | "cancel" | "schedule";
