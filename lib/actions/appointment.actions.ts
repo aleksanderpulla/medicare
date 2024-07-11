@@ -109,7 +109,7 @@ export const updateAppointment = async ({
 
     const smsMessage = `
     Hi, it's Medicare. 
-    ${type === "schedule" ? `Your appointment has been scheduled for ${formatDateTime(appointment.schedule!).dateTime}` : `We regret to inform you that your appointment has been canceled for the following reason: ${appointment.cancellationReason}`}
+    ${type === "schedule" ? `Your appointment has been scheduled for ${formatDateTime(appointment.schedule!).dateTime} with Dr. ${appointment.primaryPhysician}` : `We regret to inform you that your appointment has been canceled for the following reason: ${appointment.cancellationReason}`}
     `;
 
     await sendSMSNotification(userId, smsMessage);
