@@ -15,11 +15,11 @@ export default async function NewAppointment({
       <section className="remove-scrollbar container my-auto">
         <div className="sub-container max-w-[860px] flex-1 justify-between">
           <Image
-            src="/assets/icons/logo-medicare.svg"
-            height={1000}
-            width={1000}
+            src="/assets/icons/logo2-medicare.png"
+            height={150}
+            width={150}
             alt="patient"
-            className="mb-12 h-10 w-fit"
+            className="h-fit w-fit relative left-[-1.7rem] mb-10"
           />
 
           <AppointmentForm
