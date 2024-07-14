@@ -14,11 +14,11 @@ const Admin = async () => {
       <header className="admin-header">
         <Link href="/" className="cursor-pointer">
           <Image
-            src="/assets/icons/logo-full.svg"
-            height={32}
-            width={162}
+            src="/assets/icons/logo2-medicare.png"
+            height={180}
+            width={180}
             alt="logo"
-            className="h-8 w-fit"
+            className="relative left-[-1.7rem]"
           />
         </Link>
         <p className="text-16-semibold">Admin Dashboard</p>
