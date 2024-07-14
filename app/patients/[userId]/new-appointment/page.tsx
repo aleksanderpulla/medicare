@@ -17,7 +17,7 @@ export default async function NewAppointment({
         <div className="sub-container max-w-[860px] flex-1 justify-between">
           <Link href="/">
             <Image
-              src="/assets/icons/logo2-medicare.png"
+              src="/assets/icons/logo-medicare.png"
               height={150}
               width={150}
               alt="patient"

@@ -17,7 +17,7 @@ export default function Home({ searchParams }: SearchParamProps) {
             height={200}
             width={200}
             alt="logo"
-            className=" h-fit w-fit relative left-[-1.7rem]"
+            className="w-fit relative left-[-1.7rem] mb-8"
           />
           <PatientForm />
 

@@ -17,7 +17,7 @@ const Register = async ({ params: { userId } }: SearchParamProps) => {
         <div className="sub-container max-w-[860px] flex-1 flex-col py-10">
           <Link href="/">
             <Image
-              src="/assets/icons/logo2-medicare.png"
+              src="/assets/icons/logo-medicare.png"
               height={150}
               width={150}
               alt="patient"
