@@ -4,6 +4,7 @@ import Image from "next/image";
 import React from "react";
 
 import * as Sentry from "@sentry/nextjs";
+import Link from "next/link";
 
 const Register = async ({ params: { userId } }: SearchParamProps) => {
   const user = await getUser(userId);
@@ -15,16 +16,20 @@ const Register = async ({ params: { userId } }: SearchParamProps) => {
       <section className="remove-scrollbar container">
         <div className="sub-container max-w-[860px] flex-1 flex-col py-10">
           <Image
-            src="/assets/icons/logo-full.svg"
-            height={1000}
-            width={1000}
+            src="/assets/icons/logo2-medicare.png"
+            height={150}
+            width={150}
             alt="patient"
-            className="mb-12 h-10 w-fit"
+            className="h-fit w-fit relative left-[-1.7rem] mb-10"
           />
 
           <RegisterForm user={user} />
-
-          <p className="copyright py-12">© 2024 Medicare</p>
+          <div className="flex gap-4 py-12 items-center justify-between">
+            <p className="copyright ">© 2024 Medicare</p>
+            <Link href="/" className="text-green-500">
+              Home
+            </Link>
+          </div>
         </div>
       </section>
       <Image
