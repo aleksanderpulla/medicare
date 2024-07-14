@@ -2,6 +2,7 @@ import AppointmentForm from "@/components/forms/AppointmentForm";
 import { getPatient } from "@/lib/actions/patient.actions";
 import Image from "next/image";
 import * as Sentry from "@sentry/nextjs";
+import Link from "next/link";
 
 export default async function NewAppointment({
   params: { userId },
@@ -14,13 +15,15 @@ export default async function NewAppointment({
     <div className="flex h-screen max-h-screen">
       <section className="remove-scrollbar container my-auto">
         <div className="sub-container max-w-[860px] flex-1 justify-between">
-          <Image
-            src="/assets/icons/logo2-medicare.png"
-            height={150}
-            width={150}
-            alt="patient"
-            className="h-fit w-fit relative left-[-1.7rem] mb-10"
-          />
+          <Link href="/">
+            <Image
+              src="/assets/icons/logo2-medicare.png"
+              height={150}
+              width={150}
+              alt="patient"
+              className="h-fit w-fit relative left-[-1.7rem]"
+            />
+          </Link>
 
           <AppointmentForm
             type="create"

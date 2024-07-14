@@ -15,21 +15,18 @@ const Register = async ({ params: { userId } }: SearchParamProps) => {
     <div className="flex h-screen max-h-screen">
       <section className="remove-scrollbar container">
         <div className="sub-container max-w-[860px] flex-1 flex-col py-10">
-          <Image
-            src="/assets/icons/logo2-medicare.png"
-            height={150}
-            width={150}
-            alt="patient"
-            className="h-fit w-fit relative left-[-1.7rem] mb-10"
-          />
+          <Link href="/">
+            <Image
+              src="/assets/icons/logo2-medicare.png"
+              height={150}
+              width={150}
+              alt="patient"
+              className="h-fit w-fit relative left-[-1.7rem]"
+            />
+          </Link>
 
           <RegisterForm user={user} />
-          <div className="flex gap-4 py-12 items-center justify-between">
-            <p className="copyright ">© 2024 Medicare</p>
-            <Link href="/" className="text-green-500">
-              Home
-            </Link>
-          </div>
+          <p className="copyright my-10">© 2024 Medicare</p>
         </div>
       </section>
       <Image

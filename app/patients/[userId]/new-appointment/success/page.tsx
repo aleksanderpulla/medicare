@@ -26,11 +26,11 @@ const Success = async ({
       <div className="success-img">
         <Link href="/">
           <Image
-            src="/assets/icons/logo-full.svg"
+            src="/assets/icons/logo2-medicare.png"
+            height={150}
+            width={150}
             alt="logo"
-            width={1000}
-            height={1000}
-            className="h-10 w-fit"
+            className="w-fit"
           />
         </Link>
 
